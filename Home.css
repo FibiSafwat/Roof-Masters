@@ -1,0 +1,93 @@
+body {
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+p,
+span,
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+.show {
+    display: block;
+}
+
+
+
+
+
+.hov2 {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: all .35s;
+  }
+  
+  .hov2:before,
+  .hov2:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: #2199D6;
+    z-index: -1;
+    transition: all .35s;
+    
+    
+  }
+  
+  .hov2:before{
+    opacity: .5;
+  }
+  
+  .hov2:after{
+    transition-delay: .2s;
+  }
+  
+  .hov2:hover:before,
+  .hov2:hover:after{
+    top: 0;
+  }
+
+
+  .hov1 {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    transition: all .35s;
+  }
+  
+  .hov:before,
+  .hov1:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: all .35s;
+    
+    
+  }
+  
+  .hov1:before{
+    opacity: .5;
+    
+  }
+  
+  .hov1:after{
+    transition-delay: .5s;
+  }
+  
+  .hov1:hover:before,
+  .hov1:hover:after{
+    top: 0;
+  }
