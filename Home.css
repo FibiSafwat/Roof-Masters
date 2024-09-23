@@ -19,7 +19,7 @@ a {
 
 
 .hov2 {
-    display: block;
+    /* display: block; */
     position: relative;
     overflow: hidden;
     background: transparent;
