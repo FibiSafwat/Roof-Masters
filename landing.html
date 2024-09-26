@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Landing page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+<!-- Navbar --> 
+    <section>
+        <div class="bg-[#0E2D43]">
+            <div class="container mx-auto px-8">
+                <div class="flex justify-between items-center gap 5 py-5 px-10 text-white text-md">
+                    <img src="img/Logo.png" alt="">
+                    <div class="hidden lg:block xl:block">
+                        <ul class="flex justify-between items-center gap-5">
+                            <a href=""><li>Home</li></a>
+                            <li class="dropbtn">
+                                <button class="relative inline-block button flex gap-2 justify-center items-center" onclick="show_hide()">Services <i class="border-r-[1px] border-b-[1px] p-[2px] inline-block border-black rotate-[45deg] border-white"></i></button> 
+                                <ul id="list" class="absolute top-[100px] z-10 hidden group-hover:block text-nowrap border rounded-md  bg-white dropdown-content text-black py-[10px] px-[20px] line-height leading-10" class="group" >
+                                    <li ><a class="text-[#3C3F49] hover:text-[#2199D6] hover:border-b-2 hover:border-[#2199D6] hover:py-[5px] px-[10px]" href="#">Roof Repairs & Restoration</a></li>
+                                    <li><a class=" text-[#3C3F49] hover:text-[#2199D6]  hover:border-b-2 hover:border-[#2199D6] hover:py-[5px] px-[10px]"  href="#">Roof Replacement & Installation</a></li>
+                                    <li><a class=" text-[#3C3F49] hover:text-[#2199D6]  hover:border-b-2 hover:border-[#2199D6] hover:py-[5px] px-[10px]"  href="#">Bedouin art</a></li>
+                                    <li><a class=" text-[#3C3F49] hover:text-[#2199D6]  hover:border-b-2 hover:border-[#2199D6] hover:py-[5px] px-[10px]"  href="#">Commercial Roofing</a></li>
+                                </ul>
+                            </li>
+                            <a href=""><li>About us</li></a>
+                            <a href=""><li>Areas we serve</li></a>
+                            <a href=""><li>Contact us</li></a>
+                        </ul>
+                    </div>
+                        <a class="border border-white py-2 px-10 rounded-md hidden lg:block xl:block hover:text-[#2199D6] z-10 hov1" href="tel:5617576587">(561)-757-6587</a>
+                    <div class="lg:hidden xl:hidden">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                        <div id="mySidenav" class="sidenav overflow-hidden fixed top-0 right-0 z-[1] w-0 h-[100%] bg-[#0E2D43]  flex flex-col gap-5">
+                            <a class="block closebtn absolute top-0 right-[10px] bg-white text-[#0E2D43] text-xl border rounded-full px-2" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+                            <ul class="flex flex-col text-xl px-10 pt-[60px]  gap-5">
+                                <a class="block " href=""><li>Home</li></a>
+                                <a href="block"><li>Services</li></a>
+                                <a href="block"><li>About us</li></a>
+                                <a href="block"><li>Areas we serve</li></a>
+                                <a href="block"><li>Contact us</li></a>
+                                <a class="border border-white py-2 px-4 rounded-md" href="tel:5617576587">(561)-757-6587</a>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Hero -->
+    <section class="relative" >
+            <video autoplay muted loop class="z-[-1] object-cover h-screen w-[100%] brightness-50"> 
+                <source  src="video/VIDEO-2024-09-18-14-36-18 5.MP4">
+            </video>
+            <div class="container mx-auto px-8">
+                <div class=" flex flex-col justify-center items-center gap-5 px-14 py-14  text-center absolute inset-0 ">
+                    <span class="font-bold text-white">
+                        Roof masters
+                    </span>
+                    <div class="border border-2 border-[#12679B] w-[60px]"></div>
+                    <h1 class="text-3xl text-white lg:text-5xl xl:text:5xl font-bold ">
+                        Fast, Affordable & Reliable Roofing Contractor In South Florida
+                    </h1>
+                    <div class="flex flex-col lg:flex-row  xl:flex-row  justify-center items-center gap-5 py-10">
+                        <a class="bg-[#2199D6] text-white rounded-md py-2 px-2"2 href="tel:5617576587">(561)-757-6587</a>
+                        <a class="border border-white text-white rounded-md py-2 px-4 hov2" href="">Contact us</a>
+                    </div>
+                </div>
+            </div>           
+    </section>
+    
+<!-- Why Roof Masters -->
+    <section class="py-10" >
+            <div class="container mx-auto px-8">
+                <div class="grid grid-cols-1   lg:grid-cols-2 xl:grid-cols-2 gap-12 px-[10px]">
+                    <div class="flex flex-col gap-5">
+                        <span class="text-[#12679B] text-xl">
+                            Why Roof Masters
+                        </span>
+                        <h2 class="text-5xl font-bold">
+                            We specialize in sloped and flat roofs serving Homeowners Associations.
+                        </h2>
+                        <p class="leading-7">
+                            Roof Masters, a subsidiary of Build Masters (CGC1505687), is a full-service General and Roofing Contractor with over 20 years of experience in the South Florida construction industry. Based in Boca Raton, Florida, Roof Masters serves both Palm Beach and Broward counties, specializing in roofing and restoration services. As a Florida-certified roofing contractor (CCC1327296), we bring high expertise to every project.                        </p>
+                        <p class="leading-7">
+                            We are proud members of the Better Business Bureau, American Institute of Architects, Institute of Inspection, Cleaning, and Restoration, Roofing Contractors Association of South Florida, and LEED Green Associate. Our commitment to quality is unwavering, with all work adhering to local and national building codes, OSHA regulations, and EPA guidelines.                        </p>
+                        <p class="leading-7">
+                            Roof Masters provides various services, including new construction, reroofs, and repairs. Our highly skilled team oversees every phase of the process, ensuring professionalism, excellence, and customer satisfaction in all our projects.
+                        </p>
+                            <a class="border bg-[#2199D6] text-white rounded-md py-4 px-8 w-fit" href="tel:5617576587">Contact us</a>
+                    </div>
+                    <div class="relative ">
+                        <img class="rounded-md overflow-hidden w-[100%]" src="img-services/aHR0cHM6Ly9jb21wYW55Y2FtLXBlbmRpbmcuczMuYW1hem9uYXdzLmNvbS82NGRlOGI5YS0xNTM5LTQxY2MtOWFlZC1lNmY1MTM3OThmNzYuanBn.png" alt="">
+                        <div class="absolute bottom-10 right-0 bg-[#49B2E7] text-white flex flex-col gap-2 items-center justify-center text-center p-4 w-[193px]">
+                            <h3 class="2xl font-bold">+ 15 years</h3>
+                            <span class="text-sm">And over 100 years of combined experience of our Our staff </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+<!-- Roof Masters at Atlantis -->
+    <section class="py-10" >
+            <div class="container mx-auto px-8">
+                <div class="grid grid-cols-1   lg:grid-cols-2 xl:grid-cols-2 gap-12 px-[10px]">
+                    <div class="flex flex-col gap-5">
+                        <span class="text-[#12679B] text-xl">
+                            Roof Masters at Atlantis
+                        </span>
+                        <h2 class="text-5xl font-bold">
+                            Roof Replacement Atlantis
+                        </h2>
+                        <p class="leading-7">
+                            Call us for your roof replacement and be assured our professional team that you can depend on will carry the ball from start to finish, providing turn-key services and complete peace of mind.    
+                        </p>
+                        <ul class="list-disc list-inside" >
+                            <li>
+                                We use top quality materials.
+                            </li>
+                            <li>
+                                We work based on tens of years of experience 
+                            </li>
+                            <li>
+                                The best workmanship around
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="rounded-md w-[100%]" src="img-services/1-Apr 04 2024 03_25pm-HbiC.png" alt="">
+                </div>
+            </div>
+    </section>
+    <!--Residential Roof maintenance. Atlantis  -->
+    <section class="py-10 bg-[#12537A]" >
+            <div class="container mx-auto px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-12 text-white px-[10px]">
+                    <div class="flex flex-col gap-5">
+                        <h2 class="text-5xl font-bold">
+                            Residential Roof maintenance. Atlantis
+                        </h2>
+                        <p class="leading-7">
+                            Roof Masters offer a professional team to enhance the longevity of your roof by performing preventive tune up maintenance service.
+                        </p>
+                        <ul class="list-disc list-inside" >
+                            <li>
+                                Replacing broken roof tiles.
+                            </li>
+                            <li>
+                                Installing missing shingles.
+                            </li>
+                            <li>
+                                Reinforcing roof stacks.
+                            </li>
+                            <li>
+                                Reinforcing ridge and rake tiles.
+                            </li>
+                            <li>
+                                Repairing / Replacing cracked tile mortar.
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="rounded-md w-[100%]" src="img-services/down-net_http20240923-86-tm43si.png" alt="">
+                </div>
+            </div>
+    </section>
+    <section class="py-5 sm:py-10 " >
+        <div class="container mx-auto px-8">
+            <div class="grid grid-cols-1   lg:grid-cols-2 xl:grid-cols-2 gap-12 px-[10px]">
+                <div class="flex flex-col gap-5">
+                    <span class="text-[#12679B] text-xl">
+                        Roof Masters at Atlantis
+                    </span>
+                    <h2 class="text-5xl font-bold">
+                        Roof repairs Atlantis
+                    </h2>
+                    <p class="leading-7">
+                        Roof Masters professional team offer comprehensive roof repair methods, that fits South Florida harsh weather and comply with state codes and manufacturers recommendations.
+                    </p>
+                    <ul class="list-disc list-inside" >
+                        <li>
+                            Locate and repair leaks.
+                        </li>
+                        <li>
+                            Emergency roof tarp installation
+                        </li>
+                        <li>
+                            Roof tiles; Spanish S, Barrel, Flat.
+                        </li>
+                        <li>
+                            Asphaltic Shingle; Architectural and 3 Tab.
+                        </li>
+                        <li>
+                            Steel Stone Coated roofing tile panels.
+                        </li>
+                        <li>
+                            Steel Stone Coated shingle panels.
+                        </li>
+                    </ul>
+                </div>
+                <img class="rounded-md w-[100%]" src="img-services/DJI_0081.png" alt="">
+            </div>
+        </div>
+</section>
+
+<!-- cta -->
+    <section class="bg-[#0E2D43] py-10 px-[10px]">
+        <div class="container mx-auto px-8">
+            <div class="flex flex-col lg:flex-row xl:flex-row  justify-between items-center text-white">
+                <span class="font-bold text-2xl">
+                    Let Roof Masters Solve Your Roofing Problems
+                </span>
+                <div class="flex flex-col lg:flex-row xl:flex-row gap-5">
+                    <a class="border bg-[#2199D6] text-white rounded-md py-2 px-10 w-fit" href="tel:5617576587">Contact us</a>
+                    <a class="border border-white text-white rounded-md py-2 px-10 w-fit hov1 z-[1] hover:text-[#2199D6]" href="">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- High quality-->
+<section class="py-10 " >
+    <div class="container mx-auto px-8">
+        <div class="grid grid-cols-1   lg:grid-cols-2 xl:grid-cols-2 gap-12 px-[10px]">
+            <div class="flex flex-col gap-5">
+                <span class="text-[#12679B] text-xl">
+                    high-quality 
+                </span>
+                <h2 class="text-5xl font-bold">
+                    Commercial Roofing Atlantis
+                </h2>
+                <p class="leading-7">
+                    Our Expert Roofing team has over 100 Years combined experience in the south Florida roofing market, Roof Masters offer services in new construction, replacement, Repairing & Maintenance of commercial Roofs
+                </p>
+                <ul class="list-disc list-inside" >
+                    <li>
+                        Flat and sloped roof replacement.
+                    </li>
+                    <li>
+                        Emergency roofing services.
+                    </li>
+                    <li>
+                        Roof Maintenance programs.
+                    </li>
+                    <li>
+                        Liquid applied roof systems, Silicon and Elastomeric.
+                    </li>
+                    <li>
+                        Waterproofing
+                    </li>
+                    <li>
+                        Modified Bitumen roof systems.
+                    </li>
+                    <li>
+                        Built-up roof systems.
+                    </li>
+                    <li>
+                        Roof Tiles, Clay, Concrete, Metal and Composite
+                    </li>
+                    <li>
+                        Asphalt Shingles.
+                    </li>
+                </ul>
+            </div>
+            <img class="rounded-md w-[100%]" src="img-services/1-Apr 04 2024 03_25pm-HbiC.png" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- Section 3 -->
+    <section>
+        <div class="container mx-auto px-8">
+            <div class="flex flex-col justify-center items-center gap-5 py-10 px-[10px]">
+                <span class="text-[#12679B]">
+                    Previous Work
+                </span>
+                <h2 class="text-3xl font-bold">
+                    High-quality of work
+                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 justify-between w-[100%]">
+                    <div class="relative flex flex-col justify-center items-center">
+                        <img class="rounded-md p-[80px]" src="img/Image (4).png" alt="">
+                        <div class="bg-[#F6F7F8] absolute bottom-0 flex flex-col justify-center items-center gap-5 py-5 px-24">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect width="48" height="48" rx="2" fill="#12679B"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M35.2883 26.1701C35.0594 25.6792 34.7493 25.2708 34.3809 24.98C34.7493 24.6888 35.0594 24.2798 35.2883 23.7895C35.5176 24.2804 35.828 24.6888 36.1964 24.98C35.828 25.2708 35.5176 25.6792 35.2883 26.1701ZM37.1603 24.5926C36.4081 24.3478 35.8184 23.3888 35.6936 22.2058C35.643 21.7244 34.9344 21.7238 34.8833 22.2058C34.7582 23.3882 34.1685 24.3478 33.4163 24.5926C33.043 24.7136 33.0429 25.2451 33.4163 25.3669C34.1685 25.612 34.7582 26.5711 34.8833 27.7537C34.9344 28.236 35.643 28.2355 35.6936 27.7537C35.8184 26.571 36.4081 25.612 37.1603 25.3669C37.5347 25.2447 37.5328 24.7128 37.1603 24.5926ZM14.8894 18.8826C15.1984 19.6332 15.654 20.2454 16.2074 20.6438C15.654 21.043 15.1984 21.6552 14.8894 22.4054C14.5806 21.6552 14.1242 21.043 13.5708 20.6438C14.1242 20.2454 14.5806 19.6332 14.8894 18.8826ZM12.5642 21.0312C13.5509 21.3528 14.3224 22.5968 14.4844 24.1276C14.5352 24.6094 15.2432 24.6096 15.2942 24.1276C15.4565 22.5968 16.2283 21.3528 17.2144 21.0312C17.5876 20.9097 17.5879 20.3788 17.2144 20.2569C16.2283 19.9352 15.4565 18.691 15.2942 17.1605C15.2835 17.0606 15.2363 16.9681 15.1616 16.9008C15.0869 16.8336 14.9899 16.7963 14.8894 16.7962C14.7889 16.7963 14.6919 16.8335 14.6171 16.9008C14.5423 16.968 14.4951 17.0605 14.4844 17.1605C14.3221 18.691 13.5503 19.9353 12.5642 20.2569C12.1896 20.3791 12.191 20.9103 12.5642 21.0312ZM20.2648 13.6053C20.494 14.0961 20.8045 14.5046 21.1728 14.7957C20.8045 15.0866 20.494 15.495 20.2648 15.9859C20.0355 15.495 19.7257 15.0865 19.3574 14.7957C19.7256 14.5046 20.0355 14.0955 20.2648 13.6053ZM18.3927 15.1827C19.1449 15.4278 19.7347 16.3869 19.8597 17.5695C19.9109 18.0517 20.6193 18.0513 20.67 17.5695C20.7954 16.3869 21.3846 15.4278 22.1367 15.1827C22.5102 15.0609 22.51 14.5295 22.1367 14.4085C21.3845 14.1633 20.7954 13.204 20.67 12.0216C20.6193 11.5402 19.9108 11.5398 19.8597 12.0216C19.7347 13.204 19.1449 14.1633 18.3927 14.4085C18.0195 14.5295 18.0193 15.0607 18.3927 15.1827ZM25.2547 35.5247H24.1364V34.4061H25.2547V35.5247ZM25.3545 33.5913H24.0365C23.6421 33.5913 23.3216 33.9117 23.3216 34.3059V35.6245C23.3216 36.0184 23.642 36.3394 24.0365 36.3394H25.3545C25.7486 36.3394 26.0691 36.0184 26.0691 35.6245V34.3059C26.0691 33.9118 25.7486 33.5913 25.3545 33.5913ZM21.6643 31.9343H20.5457V30.8157H21.6643V31.9343ZM21.7641 30.0012H20.4455C20.0519 30.0012 19.7309 30.3213 19.7309 30.7158V32.0338C19.7309 32.4282 20.0519 32.7489 20.4455 32.7489H21.7641C22.1585 32.7489 22.4789 32.4282 22.4789 32.0338V30.7158C22.479 30.3214 22.1585 30.0012 21.7641 30.0012ZM25.2547 31.9343H24.1364V30.8157H25.2547V31.9343ZM25.3545 30.0012H24.0365C23.6421 30.0012 23.3216 30.3213 23.3216 30.7158V32.0338C23.3216 32.4282 23.642 32.7489 24.0365 32.7489H25.3545C25.7486 32.7489 26.0691 32.4282 26.0691 32.0338V30.7158C26.0691 30.3214 25.7486 30.0012 25.3545 30.0012ZM21.6643 35.5247H20.5457V34.4061H21.6643V35.5247ZM21.7641 33.5913H20.4455C20.0519 33.5913 19.7309 33.9117 19.7309 34.3059V35.6245C19.7309 36.0184 20.0519 36.3394 20.4455 36.3394H21.7641C22.1585 36.3394 22.4789 36.0184 22.4789 35.6245V34.3059C22.479 33.9118 22.1585 33.5913 21.7641 33.5913ZM34.4266 34.5339V32.9493L22.9002 21.4234L11.3743 32.9493V34.5338H13.1962L22.6124 25.1183C22.6502 25.0804 22.695 25.0504 22.7444 25.0299C22.7938 25.0094 22.8468 24.9989 22.9003 24.9989C22.9538 24.9989 23.0067 25.0094 23.0561 25.0299C23.1055 25.0504 23.1504 25.0804 23.1882 25.1183L32.604 34.5338H34.4266V34.5339ZM29.1148 20.3801H30.2835V27.6545L29.1148 26.4852V20.3801ZM27.1248 17.6912H24.6583C24.3292 17.6912 23.5042 17.75 22.7608 17.9649C23.2152 16.982 23.8654 16.6118 24.9884 16.6118H31.067C31.1968 17.3724 31.7623 17.7693 32.3008 17.7693C32.8401 17.7693 33.4056 17.3724 33.5354 16.6118H34.4431L34.4459 19.5654H33.5354C33.4056 18.8046 32.8401 18.4083 32.3008 18.4083C31.7623 18.4083 31.1968 18.8046 31.067 19.5654H28.1187V18.6851C28.1187 18.1373 27.673 17.6912 27.1248 17.6912ZM31.0982 28.4692V20.3801H31.2811C31.4285 20.3802 31.5703 20.3237 31.6773 20.2222C31.7842 20.1207 31.848 19.982 31.8556 19.8348C31.8979 19.0165 32.705 19.0181 32.7468 19.8348C32.7543 19.982 32.818 20.1207 32.9249 20.2222C33.0317 20.3236 33.1734 20.3802 33.3208 20.3801H34.446C34.8936 20.3801 35.2579 20.0161 35.2579 19.5682V16.609C35.2579 16.1614 34.8936 15.7971 34.446 15.7971H33.3208C33.1734 15.797 33.0317 15.8535 32.9249 15.955C32.818 16.0565 32.7543 16.1952 32.7468 16.3423C32.705 17.1595 31.8979 17.1611 31.8556 16.3423C31.848 16.1951 31.7842 16.0565 31.6773 15.955C31.5703 15.8535 31.4285 15.797 31.2811 15.7971H24.9884C22.7689 15.7971 22.064 17.2168 21.6671 18.6048C21.5612 18.9741 21.9846 19.2713 22.2958 19.0478C22.8725 18.634 24.2294 18.5059 24.6584 18.5059H27.1249C27.1724 18.5059 27.218 18.5247 27.2516 18.5584C27.2852 18.592 27.3041 18.6375 27.3041 18.6851V19.9726C27.304 20.0261 27.3146 20.0791 27.335 20.1285C27.3554 20.178 27.3854 20.2229 27.4232 20.2607C27.4611 20.2986 27.506 20.3286 27.5554 20.3491C27.6048 20.3695 27.6578 20.3801 27.7112 20.3801H28.3001V25.6705L23.1882 20.5593C23.0293 20.4003 22.7711 20.4003 22.6124 20.5593L10.6791 32.4926C10.6412 32.5304 10.6112 32.5752 10.5907 32.6246C10.5702 32.674 10.5596 32.7269 10.5596 32.7804V34.9414C10.5596 34.9949 10.5701 35.0478 10.5906 35.0972C10.6111 35.1466 10.6411 35.1915 10.6789 35.2293C10.7167 35.2672 10.7616 35.2972 10.811 35.3176C10.8604 35.3381 10.9133 35.3486 10.9668 35.3486H13.3651C13.4731 35.3486 13.577 35.3057 13.6529 35.2291L22.9001 25.9822L32.1477 35.2291C32.1854 35.267 32.2303 35.2971 32.2798 35.3176C32.3292 35.3381 32.3822 35.3487 32.4357 35.3486H34.8338C34.8873 35.3486 34.9402 35.3381 34.9896 35.3176C35.039 35.2972 35.0839 35.2672 35.1217 35.2293C35.1596 35.1915 35.1895 35.1466 35.21 35.0972C35.2305 35.0478 35.241 34.9949 35.241 34.9414V32.7804C35.241 32.6724 35.198 32.5692 35.1216 32.4926L31.0982 28.4692Z" fill="white"/>
+                            </svg>
+                            <h3 class="font-bold">
+                                Commercial Roof Maintenance
+                            </h3>
+                            <a class="border border-[#2199D6] text-[#2199D6] rounded-md py-2 px-20 lg:px-10  xl:px-10 w-fit hov2 z-[1] hover:text-white" href="">Get a Quote</a>
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col justify-center items-center">
+                        <img class="rounded-md p-[80px]" src="img/Image (6).png" alt="">
+                        <div class="bg-[#F6F7F8] absolute bottom-0 flex flex-col justify-center items-center gap-5 py-5 px-24">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect width="48" height="48" rx="2" fill="#12679B"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M35.2883 26.1701C35.0594 25.6792 34.7493 25.2708 34.3809 24.98C34.7493 24.6888 35.0594 24.2798 35.2883 23.7895C35.5176 24.2804 35.828 24.6888 36.1964 24.98C35.828 25.2708 35.5176 25.6792 35.2883 26.1701ZM37.1603 24.5926C36.4081 24.3478 35.8184 23.3888 35.6936 22.2058C35.643 21.7244 34.9344 21.7238 34.8833 22.2058C34.7582 23.3882 34.1685 24.3478 33.4163 24.5926C33.043 24.7136 33.0429 25.2451 33.4163 25.3669C34.1685 25.612 34.7582 26.5711 34.8833 27.7537C34.9344 28.236 35.643 28.2355 35.6936 27.7537C35.8184 26.571 36.4081 25.612 37.1603 25.3669C37.5347 25.2447 37.5328 24.7128 37.1603 24.5926ZM14.8894 18.8826C15.1984 19.6332 15.654 20.2454 16.2074 20.6438C15.654 21.043 15.1984 21.6552 14.8894 22.4054C14.5806 21.6552 14.1242 21.043 13.5708 20.6438C14.1242 20.2454 14.5806 19.6332 14.8894 18.8826ZM12.5642 21.0312C13.5509 21.3528 14.3224 22.5968 14.4844 24.1276C14.5352 24.6094 15.2432 24.6096 15.2942 24.1276C15.4565 22.5968 16.2283 21.3528 17.2144 21.0312C17.5876 20.9097 17.5879 20.3788 17.2144 20.2569C16.2283 19.9352 15.4565 18.691 15.2942 17.1605C15.2835 17.0606 15.2363 16.9681 15.1616 16.9008C15.0869 16.8336 14.9899 16.7963 14.8894 16.7962C14.7889 16.7963 14.6919 16.8335 14.6171 16.9008C14.5423 16.968 14.4951 17.0605 14.4844 17.1605C14.3221 18.691 13.5503 19.9353 12.5642 20.2569C12.1896 20.3791 12.191 20.9103 12.5642 21.0312ZM20.2648 13.6053C20.494 14.0961 20.8045 14.5046 21.1728 14.7957C20.8045 15.0866 20.494 15.495 20.2648 15.9859C20.0355 15.495 19.7257 15.0865 19.3574 14.7957C19.7256 14.5046 20.0355 14.0955 20.2648 13.6053ZM18.3927 15.1827C19.1449 15.4278 19.7347 16.3869 19.8597 17.5695C19.9109 18.0517 20.6193 18.0513 20.67 17.5695C20.7954 16.3869 21.3846 15.4278 22.1367 15.1827C22.5102 15.0609 22.51 14.5295 22.1367 14.4085C21.3845 14.1633 20.7954 13.204 20.67 12.0216C20.6193 11.5402 19.9108 11.5398 19.8597 12.0216C19.7347 13.204 19.1449 14.1633 18.3927 14.4085C18.0195 14.5295 18.0193 15.0607 18.3927 15.1827ZM25.2547 35.5247H24.1364V34.4061H25.2547V35.5247ZM25.3545 33.5913H24.0365C23.6421 33.5913 23.3216 33.9117 23.3216 34.3059V35.6245C23.3216 36.0184 23.642 36.3394 24.0365 36.3394H25.3545C25.7486 36.3394 26.0691 36.0184 26.0691 35.6245V34.3059C26.0691 33.9118 25.7486 33.5913 25.3545 33.5913ZM21.6643 31.9343H20.5457V30.8157H21.6643V31.9343ZM21.7641 30.0012H20.4455C20.0519 30.0012 19.7309 30.3213 19.7309 30.7158V32.0338C19.7309 32.4282 20.0519 32.7489 20.4455 32.7489H21.7641C22.1585 32.7489 22.4789 32.4282 22.4789 32.0338V30.7158C22.479 30.3214 22.1585 30.0012 21.7641 30.0012ZM25.2547 31.9343H24.1364V30.8157H25.2547V31.9343ZM25.3545 30.0012H24.0365C23.6421 30.0012 23.3216 30.3213 23.3216 30.7158V32.0338C23.3216 32.4282 23.642 32.7489 24.0365 32.7489H25.3545C25.7486 32.7489 26.0691 32.4282 26.0691 32.0338V30.7158C26.0691 30.3214 25.7486 30.0012 25.3545 30.0012ZM21.6643 35.5247H20.5457V34.4061H21.6643V35.5247ZM21.7641 33.5913H20.4455C20.0519 33.5913 19.7309 33.9117 19.7309 34.3059V35.6245C19.7309 36.0184 20.0519 36.3394 20.4455 36.3394H21.7641C22.1585 36.3394 22.4789 36.0184 22.4789 35.6245V34.3059C22.479 33.9118 22.1585 33.5913 21.7641 33.5913ZM34.4266 34.5339V32.9493L22.9002 21.4234L11.3743 32.9493V34.5338H13.1962L22.6124 25.1183C22.6502 25.0804 22.695 25.0504 22.7444 25.0299C22.7938 25.0094 22.8468 24.9989 22.9003 24.9989C22.9538 24.9989 23.0067 25.0094 23.0561 25.0299C23.1055 25.0504 23.1504 25.0804 23.1882 25.1183L32.604 34.5338H34.4266V34.5339ZM29.1148 20.3801H30.2835V27.6545L29.1148 26.4852V20.3801ZM27.1248 17.6912H24.6583C24.3292 17.6912 23.5042 17.75 22.7608 17.9649C23.2152 16.982 23.8654 16.6118 24.9884 16.6118H31.067C31.1968 17.3724 31.7623 17.7693 32.3008 17.7693C32.8401 17.7693 33.4056 17.3724 33.5354 16.6118H34.4431L34.4459 19.5654H33.5354C33.4056 18.8046 32.8401 18.4083 32.3008 18.4083C31.7623 18.4083 31.1968 18.8046 31.067 19.5654H28.1187V18.6851C28.1187 18.1373 27.673 17.6912 27.1248 17.6912ZM31.0982 28.4692V20.3801H31.2811C31.4285 20.3802 31.5703 20.3237 31.6773 20.2222C31.7842 20.1207 31.848 19.982 31.8556 19.8348C31.8979 19.0165 32.705 19.0181 32.7468 19.8348C32.7543 19.982 32.818 20.1207 32.9249 20.2222C33.0317 20.3236 33.1734 20.3802 33.3208 20.3801H34.446C34.8936 20.3801 35.2579 20.0161 35.2579 19.5682V16.609C35.2579 16.1614 34.8936 15.7971 34.446 15.7971H33.3208C33.1734 15.797 33.0317 15.8535 32.9249 15.955C32.818 16.0565 32.7543 16.1952 32.7468 16.3423C32.705 17.1595 31.8979 17.1611 31.8556 16.3423C31.848 16.1951 31.7842 16.0565 31.6773 15.955C31.5703 15.8535 31.4285 15.797 31.2811 15.7971H24.9884C22.7689 15.7971 22.064 17.2168 21.6671 18.6048C21.5612 18.9741 21.9846 19.2713 22.2958 19.0478C22.8725 18.634 24.2294 18.5059 24.6584 18.5059H27.1249C27.1724 18.5059 27.218 18.5247 27.2516 18.5584C27.2852 18.592 27.3041 18.6375 27.3041 18.6851V19.9726C27.304 20.0261 27.3146 20.0791 27.335 20.1285C27.3554 20.178 27.3854 20.2229 27.4232 20.2607C27.4611 20.2986 27.506 20.3286 27.5554 20.3491C27.6048 20.3695 27.6578 20.3801 27.7112 20.3801H28.3001V25.6705L23.1882 20.5593C23.0293 20.4003 22.7711 20.4003 22.6124 20.5593L10.6791 32.4926C10.6412 32.5304 10.6112 32.5752 10.5907 32.6246C10.5702 32.674 10.5596 32.7269 10.5596 32.7804V34.9414C10.5596 34.9949 10.5701 35.0478 10.5906 35.0972C10.6111 35.1466 10.6411 35.1915 10.6789 35.2293C10.7167 35.2672 10.7616 35.2972 10.811 35.3176C10.8604 35.3381 10.9133 35.3486 10.9668 35.3486H13.3651C13.4731 35.3486 13.577 35.3057 13.6529 35.2291L22.9001 25.9822L32.1477 35.2291C32.1854 35.267 32.2303 35.2971 32.2798 35.3176C32.3292 35.3381 32.3822 35.3487 32.4357 35.3486H34.8338C34.8873 35.3486 34.9402 35.3381 34.9896 35.3176C35.039 35.2972 35.0839 35.2672 35.1217 35.2293C35.1596 35.1915 35.1895 35.1466 35.21 35.0972C35.2305 35.0478 35.241 34.9949 35.241 34.9414V32.7804C35.241 32.6724 35.198 32.5692 35.1216 32.4926L31.0982 28.4692Z" fill="white"/>
+                            </svg>
+                            <h3 class="font-bold">
+                                Roof Shingle Installation
+                            </h3>
+                            <a class="border border-[#2199D6] text-[#2199D6] rounded-md py-2 px-20 lg:px-10  xl:px-10 w-fit hov2 z-[1] hover:text-white" href="">Get a Quote</a>
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col justify-center items-center">
+                        <img class="rounded-md p-[80px]" src="img/Image (7).png" alt="">
+                        <div class="bg-[#F6F7F8] absolute bottom-0 flex flex-col justify-center items-center gap-5 py-5 px-24">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect width="48" height="48" rx="2" fill="#12679B"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M35.2883 26.1701C35.0594 25.6792 34.7493 25.2708 34.3809 24.98C34.7493 24.6888 35.0594 24.2798 35.2883 23.7895C35.5176 24.2804 35.828 24.6888 36.1964 24.98C35.828 25.2708 35.5176 25.6792 35.2883 26.1701ZM37.1603 24.5926C36.4081 24.3478 35.8184 23.3888 35.6936 22.2058C35.643 21.7244 34.9344 21.7238 34.8833 22.2058C34.7582 23.3882 34.1685 24.3478 33.4163 24.5926C33.043 24.7136 33.0429 25.2451 33.4163 25.3669C34.1685 25.612 34.7582 26.5711 34.8833 27.7537C34.9344 28.236 35.643 28.2355 35.6936 27.7537C35.8184 26.571 36.4081 25.612 37.1603 25.3669C37.5347 25.2447 37.5328 24.7128 37.1603 24.5926ZM14.8894 18.8826C15.1984 19.6332 15.654 20.2454 16.2074 20.6438C15.654 21.043 15.1984 21.6552 14.8894 22.4054C14.5806 21.6552 14.1242 21.043 13.5708 20.6438C14.1242 20.2454 14.5806 19.6332 14.8894 18.8826ZM12.5642 21.0312C13.5509 21.3528 14.3224 22.5968 14.4844 24.1276C14.5352 24.6094 15.2432 24.6096 15.2942 24.1276C15.4565 22.5968 16.2283 21.3528 17.2144 21.0312C17.5876 20.9097 17.5879 20.3788 17.2144 20.2569C16.2283 19.9352 15.4565 18.691 15.2942 17.1605C15.2835 17.0606 15.2363 16.9681 15.1616 16.9008C15.0869 16.8336 14.9899 16.7963 14.8894 16.7962C14.7889 16.7963 14.6919 16.8335 14.6171 16.9008C14.5423 16.968 14.4951 17.0605 14.4844 17.1605C14.3221 18.691 13.5503 19.9353 12.5642 20.2569C12.1896 20.3791 12.191 20.9103 12.5642 21.0312ZM20.2648 13.6053C20.494 14.0961 20.8045 14.5046 21.1728 14.7957C20.8045 15.0866 20.494 15.495 20.2648 15.9859C20.0355 15.495 19.7257 15.0865 19.3574 14.7957C19.7256 14.5046 20.0355 14.0955 20.2648 13.6053ZM18.3927 15.1827C19.1449 15.4278 19.7347 16.3869 19.8597 17.5695C19.9109 18.0517 20.6193 18.0513 20.67 17.5695C20.7954 16.3869 21.3846 15.4278 22.1367 15.1827C22.5102 15.0609 22.51 14.5295 22.1367 14.4085C21.3845 14.1633 20.7954 13.204 20.67 12.0216C20.6193 11.5402 19.9108 11.5398 19.8597 12.0216C19.7347 13.204 19.1449 14.1633 18.3927 14.4085C18.0195 14.5295 18.0193 15.0607 18.3927 15.1827ZM25.2547 35.5247H24.1364V34.4061H25.2547V35.5247ZM25.3545 33.5913H24.0365C23.6421 33.5913 23.3216 33.9117 23.3216 34.3059V35.6245C23.3216 36.0184 23.642 36.3394 24.0365 36.3394H25.3545C25.7486 36.3394 26.0691 36.0184 26.0691 35.6245V34.3059C26.0691 33.9118 25.7486 33.5913 25.3545 33.5913ZM21.6643 31.9343H20.5457V30.8157H21.6643V31.9343ZM21.7641 30.0012H20.4455C20.0519 30.0012 19.7309 30.3213 19.7309 30.7158V32.0338C19.7309 32.4282 20.0519 32.7489 20.4455 32.7489H21.7641C22.1585 32.7489 22.4789 32.4282 22.4789 32.0338V30.7158C22.479 30.3214 22.1585 30.0012 21.7641 30.0012ZM25.2547 31.9343H24.1364V30.8157H25.2547V31.9343ZM25.3545 30.0012H24.0365C23.6421 30.0012 23.3216 30.3213 23.3216 30.7158V32.0338C23.3216 32.4282 23.642 32.7489 24.0365 32.7489H25.3545C25.7486 32.7489 26.0691 32.4282 26.0691 32.0338V30.7158C26.0691 30.3214 25.7486 30.0012 25.3545 30.0012ZM21.6643 35.5247H20.5457V34.4061H21.6643V35.5247ZM21.7641 33.5913H20.4455C20.0519 33.5913 19.7309 33.9117 19.7309 34.3059V35.6245C19.7309 36.0184 20.0519 36.3394 20.4455 36.3394H21.7641C22.1585 36.3394 22.4789 36.0184 22.4789 35.6245V34.3059C22.479 33.9118 22.1585 33.5913 21.7641 33.5913ZM34.4266 34.5339V32.9493L22.9002 21.4234L11.3743 32.9493V34.5338H13.1962L22.6124 25.1183C22.6502 25.0804 22.695 25.0504 22.7444 25.0299C22.7938 25.0094 22.8468 24.9989 22.9003 24.9989C22.9538 24.9989 23.0067 25.0094 23.0561 25.0299C23.1055 25.0504 23.1504 25.0804 23.1882 25.1183L32.604 34.5338H34.4266V34.5339ZM29.1148 20.3801H30.2835V27.6545L29.1148 26.4852V20.3801ZM27.1248 17.6912H24.6583C24.3292 17.6912 23.5042 17.75 22.7608 17.9649C23.2152 16.982 23.8654 16.6118 24.9884 16.6118H31.067C31.1968 17.3724 31.7623 17.7693 32.3008 17.7693C32.8401 17.7693 33.4056 17.3724 33.5354 16.6118H34.4431L34.4459 19.5654H33.5354C33.4056 18.8046 32.8401 18.4083 32.3008 18.4083C31.7623 18.4083 31.1968 18.8046 31.067 19.5654H28.1187V18.6851C28.1187 18.1373 27.673 17.6912 27.1248 17.6912ZM31.0982 28.4692V20.3801H31.2811C31.4285 20.3802 31.5703 20.3237 31.6773 20.2222C31.7842 20.1207 31.848 19.982 31.8556 19.8348C31.8979 19.0165 32.705 19.0181 32.7468 19.8348C32.7543 19.982 32.818 20.1207 32.9249 20.2222C33.0317 20.3236 33.1734 20.3802 33.3208 20.3801H34.446C34.8936 20.3801 35.2579 20.0161 35.2579 19.5682V16.609C35.2579 16.1614 34.8936 15.7971 34.446 15.7971H33.3208C33.1734 15.797 33.0317 15.8535 32.9249 15.955C32.818 16.0565 32.7543 16.1952 32.7468 16.3423C32.705 17.1595 31.8979 17.1611 31.8556 16.3423C31.848 16.1951 31.7842 16.0565 31.6773 15.955C31.5703 15.8535 31.4285 15.797 31.2811 15.7971H24.9884C22.7689 15.7971 22.064 17.2168 21.6671 18.6048C21.5612 18.9741 21.9846 19.2713 22.2958 19.0478C22.8725 18.634 24.2294 18.5059 24.6584 18.5059H27.1249C27.1724 18.5059 27.218 18.5247 27.2516 18.5584C27.2852 18.592 27.3041 18.6375 27.3041 18.6851V19.9726C27.304 20.0261 27.3146 20.0791 27.335 20.1285C27.3554 20.178 27.3854 20.2229 27.4232 20.2607C27.4611 20.2986 27.506 20.3286 27.5554 20.3491C27.6048 20.3695 27.6578 20.3801 27.7112 20.3801H28.3001V25.6705L23.1882 20.5593C23.0293 20.4003 22.7711 20.4003 22.6124 20.5593L10.6791 32.4926C10.6412 32.5304 10.6112 32.5752 10.5907 32.6246C10.5702 32.674 10.5596 32.7269 10.5596 32.7804V34.9414C10.5596 34.9949 10.5701 35.0478 10.5906 35.0972C10.6111 35.1466 10.6411 35.1915 10.6789 35.2293C10.7167 35.2672 10.7616 35.2972 10.811 35.3176C10.8604 35.3381 10.9133 35.3486 10.9668 35.3486H13.3651C13.4731 35.3486 13.577 35.3057 13.6529 35.2291L22.9001 25.9822L32.1477 35.2291C32.1854 35.267 32.2303 35.2971 32.2798 35.3176C32.3292 35.3381 32.3822 35.3487 32.4357 35.3486H34.8338C34.8873 35.3486 34.9402 35.3381 34.9896 35.3176C35.039 35.2972 35.0839 35.2672 35.1217 35.2293C35.1596 35.1915 35.1895 35.1466 35.21 35.0972C35.2305 35.0478 35.241 34.9949 35.241 34.9414V32.7804C35.241 32.6724 35.198 32.5692 35.1216 32.4926L31.0982 28.4692Z" fill="white"/>
+                            </svg>
+                            <h3 class="font-bold">
+                                Roof Shingle Replacement
+                            </h3>
+                            <a class="border border-[#2199D6] text-[#2199D6] rounded-md py-2 px-20 lg:px-10  xl:px-10 w-fit hov2 z-[1] hover:text-white" href="">Get a Quote</a>
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col justify-center items-center">
+                        <img class="rounded-md p-[80px]" src="img/Image (8).png" alt="">
+                        <div class="bg-[#F6F7F8] absolute bottom-0 flex flex-col justify-center items-center gap-5 py-5 px-24">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect width="48" height="48" rx="2" fill="#12679B"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M35.2883 26.1701C35.0594 25.6792 34.7493 25.2708 34.3809 24.98C34.7493 24.6888 35.0594 24.2798 35.2883 23.7895C35.5176 24.2804 35.828 24.6888 36.1964 24.98C35.828 25.2708 35.5176 25.6792 35.2883 26.1701ZM37.1603 24.5926C36.4081 24.3478 35.8184 23.3888 35.6936 22.2058C35.643 21.7244 34.9344 21.7238 34.8833 22.2058C34.7582 23.3882 34.1685 24.3478 33.4163 24.5926C33.043 24.7136 33.0429 25.2451 33.4163 25.3669C34.1685 25.612 34.7582 26.5711 34.8833 27.7537C34.9344 28.236 35.643 28.2355 35.6936 27.7537C35.8184 26.571 36.4081 25.612 37.1603 25.3669C37.5347 25.2447 37.5328 24.7128 37.1603 24.5926ZM14.8894 18.8826C15.1984 19.6332 15.654 20.2454 16.2074 20.6438C15.654 21.043 15.1984 21.6552 14.8894 22.4054C14.5806 21.6552 14.1242 21.043 13.5708 20.6438C14.1242 20.2454 14.5806 19.6332 14.8894 18.8826ZM12.5642 21.0312C13.5509 21.3528 14.3224 22.5968 14.4844 24.1276C14.5352 24.6094 15.2432 24.6096 15.2942 24.1276C15.4565 22.5968 16.2283 21.3528 17.2144 21.0312C17.5876 20.9097 17.5879 20.3788 17.2144 20.2569C16.2283 19.9352 15.4565 18.691 15.2942 17.1605C15.2835 17.0606 15.2363 16.9681 15.1616 16.9008C15.0869 16.8336 14.9899 16.7963 14.8894 16.7962C14.7889 16.7963 14.6919 16.8335 14.6171 16.9008C14.5423 16.968 14.4951 17.0605 14.4844 17.1605C14.3221 18.691 13.5503 19.9353 12.5642 20.2569C12.1896 20.3791 12.191 20.9103 12.5642 21.0312ZM20.2648 13.6053C20.494 14.0961 20.8045 14.5046 21.1728 14.7957C20.8045 15.0866 20.494 15.495 20.2648 15.9859C20.0355 15.495 19.7257 15.0865 19.3574 14.7957C19.7256 14.5046 20.0355 14.0955 20.2648 13.6053ZM18.3927 15.1827C19.1449 15.4278 19.7347 16.3869 19.8597 17.5695C19.9109 18.0517 20.6193 18.0513 20.67 17.5695C20.7954 16.3869 21.3846 15.4278 22.1367 15.1827C22.5102 15.0609 22.51 14.5295 22.1367 14.4085C21.3845 14.1633 20.7954 13.204 20.67 12.0216C20.6193 11.5402 19.9108 11.5398 19.8597 12.0216C19.7347 13.204 19.1449 14.1633 18.3927 14.4085C18.0195 14.5295 18.0193 15.0607 18.3927 15.1827ZM25.2547 35.5247H24.1364V34.4061H25.2547V35.5247ZM25.3545 33.5913H24.0365C23.6421 33.5913 23.3216 33.9117 23.3216 34.3059V35.6245C23.3216 36.0184 23.642 36.3394 24.0365 36.3394H25.3545C25.7486 36.3394 26.0691 36.0184 26.0691 35.6245V34.3059C26.0691 33.9118 25.7486 33.5913 25.3545 33.5913ZM21.6643 31.9343H20.5457V30.8157H21.6643V31.9343ZM21.7641 30.0012H20.4455C20.0519 30.0012 19.7309 30.3213 19.7309 30.7158V32.0338C19.7309 32.4282 20.0519 32.7489 20.4455 32.7489H21.7641C22.1585 32.7489 22.4789 32.4282 22.4789 32.0338V30.7158C22.479 30.3214 22.1585 30.0012 21.7641 30.0012ZM25.2547 31.9343H24.1364V30.8157H25.2547V31.9343ZM25.3545 30.0012H24.0365C23.6421 30.0012 23.3216 30.3213 23.3216 30.7158V32.0338C23.3216 32.4282 23.642 32.7489 24.0365 32.7489H25.3545C25.7486 32.7489 26.0691 32.4282 26.0691 32.0338V30.7158C26.0691 30.3214 25.7486 30.0012 25.3545 30.0012ZM21.6643 35.5247H20.5457V34.4061H21.6643V35.5247ZM21.7641 33.5913H20.4455C20.0519 33.5913 19.7309 33.9117 19.7309 34.3059V35.6245C19.7309 36.0184 20.0519 36.3394 20.4455 36.3394H21.7641C22.1585 36.3394 22.4789 36.0184 22.4789 35.6245V34.3059C22.479 33.9118 22.1585 33.5913 21.7641 33.5913ZM34.4266 34.5339V32.9493L22.9002 21.4234L11.3743 32.9493V34.5338H13.1962L22.6124 25.1183C22.6502 25.0804 22.695 25.0504 22.7444 25.0299C22.7938 25.0094 22.8468 24.9989 22.9003 24.9989C22.9538 24.9989 23.0067 25.0094 23.0561 25.0299C23.1055 25.0504 23.1504 25.0804 23.1882 25.1183L32.604 34.5338H34.4266V34.5339ZM29.1148 20.3801H30.2835V27.6545L29.1148 26.4852V20.3801ZM27.1248 17.6912H24.6583C24.3292 17.6912 23.5042 17.75 22.7608 17.9649C23.2152 16.982 23.8654 16.6118 24.9884 16.6118H31.067C31.1968 17.3724 31.7623 17.7693 32.3008 17.7693C32.8401 17.7693 33.4056 17.3724 33.5354 16.6118H34.4431L34.4459 19.5654H33.5354C33.4056 18.8046 32.8401 18.4083 32.3008 18.4083C31.7623 18.4083 31.1968 18.8046 31.067 19.5654H28.1187V18.6851C28.1187 18.1373 27.673 17.6912 27.1248 17.6912ZM31.0982 28.4692V20.3801H31.2811C31.4285 20.3802 31.5703 20.3237 31.6773 20.2222C31.7842 20.1207 31.848 19.982 31.8556 19.8348C31.8979 19.0165 32.705 19.0181 32.7468 19.8348C32.7543 19.982 32.818 20.1207 32.9249 20.2222C33.0317 20.3236 33.1734 20.3802 33.3208 20.3801H34.446C34.8936 20.3801 35.2579 20.0161 35.2579 19.5682V16.609C35.2579 16.1614 34.8936 15.7971 34.446 15.7971H33.3208C33.1734 15.797 33.0317 15.8535 32.9249 15.955C32.818 16.0565 32.7543 16.1952 32.7468 16.3423C32.705 17.1595 31.8979 17.1611 31.8556 16.3423C31.848 16.1951 31.7842 16.0565 31.6773 15.955C31.5703 15.8535 31.4285 15.797 31.2811 15.7971H24.9884C22.7689 15.7971 22.064 17.2168 21.6671 18.6048C21.5612 18.9741 21.9846 19.2713 22.2958 19.0478C22.8725 18.634 24.2294 18.5059 24.6584 18.5059H27.1249C27.1724 18.5059 27.218 18.5247 27.2516 18.5584C27.2852 18.592 27.3041 18.6375 27.3041 18.6851V19.9726C27.304 20.0261 27.3146 20.0791 27.335 20.1285C27.3554 20.178 27.3854 20.2229 27.4232 20.2607C27.4611 20.2986 27.506 20.3286 27.5554 20.3491C27.6048 20.3695 27.6578 20.3801 27.7112 20.3801H28.3001V25.6705L23.1882 20.5593C23.0293 20.4003 22.7711 20.4003 22.6124 20.5593L10.6791 32.4926C10.6412 32.5304 10.6112 32.5752 10.5907 32.6246C10.5702 32.674 10.5596 32.7269 10.5596 32.7804V34.9414C10.5596 34.9949 10.5701 35.0478 10.5906 35.0972C10.6111 35.1466 10.6411 35.1915 10.6789 35.2293C10.7167 35.2672 10.7616 35.2972 10.811 35.3176C10.8604 35.3381 10.9133 35.3486 10.9668 35.3486H13.3651C13.4731 35.3486 13.577 35.3057 13.6529 35.2291L22.9001 25.9822L32.1477 35.2291C32.1854 35.267 32.2303 35.2971 32.2798 35.3176C32.3292 35.3381 32.3822 35.3487 32.4357 35.3486H34.8338C34.8873 35.3486 34.9402 35.3381 34.9896 35.3176C35.039 35.2972 35.0839 35.2672 35.1217 35.2293C35.1596 35.1915 35.1895 35.1466 35.21 35.0972C35.2305 35.0478 35.241 34.9949 35.241 34.9414V32.7804C35.241 32.6724 35.198 32.5692 35.1216 32.4926L31.0982 28.4692Z" fill="white"/>
+                            </svg>
+                            <h3 class="font-bold">
+                                Residential Roof Installation
+                            </h3>
+                            <a class="border border-[#2199D6] text-[#2199D6] rounded-md py-2 px-20 lg:px-10  xl:px-10 w-fit hov2 z-[1] hover:text-white" href="">Get a Quote</a>
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col justify-center items-center">
+                        <img class="rounded-md p-[80px]" src="img/Image (9).png" alt="">
+                        <div class="bg-[#F6F7F8] absolute bottom-0 flex flex-col justify-center items-center gap-5 py-5 px-24">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect width="48" height="48" rx="2" fill="#12679B"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M35.2883 26.1701C35.0594 25.6792 34.7493 25.2708 34.3809 24.98C34.7493 24.6888 35.0594 24.2798 35.2883 23.7895C35.5176 24.2804 35.828 24.6888 36.1964 24.98C35.828 25.2708 35.5176 25.6792 35.2883 26.1701ZM37.1603 24.5926C36.4081 24.3478 35.8184 23.3888 35.6936 22.2058C35.643 21.7244 34.9344 21.7238 34.8833 22.2058C34.7582 23.3882 34.1685 24.3478 33.4163 24.5926C33.043 24.7136 33.0429 25.2451 33.4163 25.3669C34.1685 25.612 34.7582 26.5711 34.8833 27.7537C34.9344 28.236 35.643 28.2355 35.6936 27.7537C35.8184 26.571 36.4081 25.612 37.1603 25.3669C37.5347 25.2447 37.5328 24.7128 37.1603 24.5926ZM14.8894 18.8826C15.1984 19.6332 15.654 20.2454 16.2074 20.6438C15.654 21.043 15.1984 21.6552 14.8894 22.4054C14.5806 21.6552 14.1242 21.043 13.5708 20.6438C14.1242 20.2454 14.5806 19.6332 14.8894 18.8826ZM12.5642 21.0312C13.5509 21.3528 14.3224 22.5968 14.4844 24.1276C14.5352 24.6094 15.2432 24.6096 15.2942 24.1276C15.4565 22.5968 16.2283 21.3528 17.2144 21.0312C17.5876 20.9097 17.5879 20.3788 17.2144 20.2569C16.2283 19.9352 15.4565 18.691 15.2942 17.1605C15.2835 17.0606 15.2363 16.9681 15.1616 16.9008C15.0869 16.8336 14.9899 16.7963 14.8894 16.7962C14.7889 16.7963 14.6919 16.8335 14.6171 16.9008C14.5423 16.968 14.4951 17.0605 14.4844 17.1605C14.3221 18.691 13.5503 19.9353 12.5642 20.2569C12.1896 20.3791 12.191 20.9103 12.5642 21.0312ZM20.2648 13.6053C20.494 14.0961 20.8045 14.5046 21.1728 14.7957C20.8045 15.0866 20.494 15.495 20.2648 15.9859C20.0355 15.495 19.7257 15.0865 19.3574 14.7957C19.7256 14.5046 20.0355 14.0955 20.2648 13.6053ZM18.3927 15.1827C19.1449 15.4278 19.7347 16.3869 19.8597 17.5695C19.9109 18.0517 20.6193 18.0513 20.67 17.5695C20.7954 16.3869 21.3846 15.4278 22.1367 15.1827C22.5102 15.0609 22.51 14.5295 22.1367 14.4085C21.3845 14.1633 20.7954 13.204 20.67 12.0216C20.6193 11.5402 19.9108 11.5398 19.8597 12.0216C19.7347 13.204 19.1449 14.1633 18.3927 14.4085C18.0195 14.5295 18.0193 15.0607 18.3927 15.1827ZM25.2547 35.5247H24.1364V34.4061H25.2547V35.5247ZM25.3545 33.5913H24.0365C23.6421 33.5913 23.3216 33.9117 23.3216 34.3059V35.6245C23.3216 36.0184 23.642 36.3394 24.0365 36.3394H25.3545C25.7486 36.3394 26.0691 36.0184 26.0691 35.6245V34.3059C26.0691 33.9118 25.7486 33.5913 25.3545 33.5913ZM21.6643 31.9343H20.5457V30.8157H21.6643V31.9343ZM21.7641 30.0012H20.4455C20.0519 30.0012 19.7309 30.3213 19.7309 30.7158V32.0338C19.7309 32.4282 20.0519 32.7489 20.4455 32.7489H21.7641C22.1585 32.7489 22.4789 32.4282 22.4789 32.0338V30.7158C22.479 30.3214 22.1585 30.0012 21.7641 30.0012ZM25.2547 31.9343H24.1364V30.8157H25.2547V31.9343ZM25.3545 30.0012H24.0365C23.6421 30.0012 23.3216 30.3213 23.3216 30.7158V32.0338C23.3216 32.4282 23.642 32.7489 24.0365 32.7489H25.3545C25.7486 32.7489 26.0691 32.4282 26.0691 32.0338V30.7158C26.0691 30.3214 25.7486 30.0012 25.3545 30.0012ZM21.6643 35.5247H20.5457V34.4061H21.6643V35.5247ZM21.7641 33.5913H20.4455C20.0519 33.5913 19.7309 33.9117 19.7309 34.3059V35.6245C19.7309 36.0184 20.0519 36.3394 20.4455 36.3394H21.7641C22.1585 36.3394 22.4789 36.0184 22.4789 35.6245V34.3059C22.479 33.9118 22.1585 33.5913 21.7641 33.5913ZM34.4266 34.5339V32.9493L22.9002 21.4234L11.3743 32.9493V34.5338H13.1962L22.6124 25.1183C22.6502 25.0804 22.695 25.0504 22.7444 25.0299C22.7938 25.0094 22.8468 24.9989 22.9003 24.9989C22.9538 24.9989 23.0067 25.0094 23.0561 25.0299C23.1055 25.0504 23.1504 25.0804 23.1882 25.1183L32.604 34.5338H34.4266V34.5339ZM29.1148 20.3801H30.2835V27.6545L29.1148 26.4852V20.3801ZM27.1248 17.6912H24.6583C24.3292 17.6912 23.5042 17.75 22.7608 17.9649C23.2152 16.982 23.8654 16.6118 24.9884 16.6118H31.067C31.1968 17.3724 31.7623 17.7693 32.3008 17.7693C32.8401 17.7693 33.4056 17.3724 33.5354 16.6118H34.4431L34.4459 19.5654H33.5354C33.4056 18.8046 32.8401 18.4083 32.3008 18.4083C31.7623 18.4083 31.1968 18.8046 31.067 19.5654H28.1187V18.6851C28.1187 18.1373 27.673 17.6912 27.1248 17.6912ZM31.0982 28.4692V20.3801H31.2811C31.4285 20.3802 31.5703 20.3237 31.6773 20.2222C31.7842 20.1207 31.848 19.982 31.8556 19.8348C31.8979 19.0165 32.705 19.0181 32.7468 19.8348C32.7543 19.982 32.818 20.1207 32.9249 20.2222C33.0317 20.3236 33.1734 20.3802 33.3208 20.3801H34.446C34.8936 20.3801 35.2579 20.0161 35.2579 19.5682V16.609C35.2579 16.1614 34.8936 15.7971 34.446 15.7971H33.3208C33.1734 15.797 33.0317 15.8535 32.9249 15.955C32.818 16.0565 32.7543 16.1952 32.7468 16.3423C32.705 17.1595 31.8979 17.1611 31.8556 16.3423C31.848 16.1951 31.7842 16.0565 31.6773 15.955C31.5703 15.8535 31.4285 15.797 31.2811 15.7971H24.9884C22.7689 15.7971 22.064 17.2168 21.6671 18.6048C21.5612 18.9741 21.9846 19.2713 22.2958 19.0478C22.8725 18.634 24.2294 18.5059 24.6584 18.5059H27.1249C27.1724 18.5059 27.218 18.5247 27.2516 18.5584C27.2852 18.592 27.3041 18.6375 27.3041 18.6851V19.9726C27.304 20.0261 27.3146 20.0791 27.335 20.1285C27.3554 20.178 27.3854 20.2229 27.4232 20.2607C27.4611 20.2986 27.506 20.3286 27.5554 20.3491C27.6048 20.3695 27.6578 20.3801 27.7112 20.3801H28.3001V25.6705L23.1882 20.5593C23.0293 20.4003 22.7711 20.4003 22.6124 20.5593L10.6791 32.4926C10.6412 32.5304 10.6112 32.5752 10.5907 32.6246C10.5702 32.674 10.5596 32.7269 10.5596 32.7804V34.9414C10.5596 34.9949 10.5701 35.0478 10.5906 35.0972C10.6111 35.1466 10.6411 35.1915 10.6789 35.2293C10.7167 35.2672 10.7616 35.2972 10.811 35.3176C10.8604 35.3381 10.9133 35.3486 10.9668 35.3486H13.3651C13.4731 35.3486 13.577 35.3057 13.6529 35.2291L22.9001 25.9822L32.1477 35.2291C32.1854 35.267 32.2303 35.2971 32.2798 35.3176C32.3292 35.3381 32.3822 35.3487 32.4357 35.3486H34.8338C34.8873 35.3486 34.9402 35.3381 34.9896 35.3176C35.039 35.2972 35.0839 35.2672 35.1217 35.2293C35.1596 35.1915 35.1895 35.1466 35.21 35.0972C35.2305 35.0478 35.241 34.9949 35.241 34.9414V32.7804C35.241 32.6724 35.198 32.5692 35.1216 32.4926L31.0982 28.4692Z" fill="white"/>
+                            </svg>
+                            <h3 class="font-bold">
+                                Roof Replacement
+                            </h3>
+                            <a class="border border-[#2199D6] text-[#2199D6] rounded-md py-2 px-20 lg:px-10  xl:px-10 w-fit hov2 z-[1] hover:text-white" href="">Get a Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Section 4-->
+    <section class="bg-[url('img/Image.jpg')] bg-cover bg-center py-10">
+        <div class="container mx-auto px-8">
+            <div class="flex flex-col gap-5 space-y-6 px-[10px]">
+                <div class="flex flex-col gap-5">
+                    <span class="text-[#12679B] text-lg">Get in touch</span>
+                    <h2 class="text-5xl font-bold text-white">Contact us</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-5 py-18">
+                    <div class="flex flex-col gap-5">
+                        <span class="text-white font-bold text-2xl">
+                            Whether You Need A Small Roof Repair, Or A Big Roof Installed, We Are Here To Help & We Would Love To Hear From You
+                        </span>
+                        <div class="flex items-center gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect width="40" height="40" rx="4" fill="#49B2E7"/>
+                                <path d="M10.5 12.5C10.5 11.9696 10.7107 11.4609 11.0858 11.0858C11.4609 10.7107 11.9696 10.5 12.5 10.5H15.78C15.9898 10.5002 16.1942 10.5663 16.3644 10.689C16.5345 10.8118 16.6617 10.985 16.728 11.184L18.226 15.677C18.3019 15.9053 18.2929 16.1534 18.2007 16.3756C18.1085 16.5979 17.9393 16.7795 17.724 16.887L15.467 18.017C16.5733 20.4655 18.5345 22.4267 20.983 23.533L22.113 21.276C22.2205 21.0607 22.4021 20.8915 22.6244 20.7993C22.8466 20.7071 23.0947 20.6981 23.323 20.774L27.816 22.272C28.0152 22.3383 28.1885 22.4657 28.3112 22.636C28.434 22.8064 28.5001 23.011 28.5 23.221V26.5C28.5 27.0304 28.2893 27.5391 27.9142 27.9142C27.5391 28.2893 27.0304 28.5 26.5 28.5H25.5C17.216 28.5 10.5 21.784 10.5 13.5V12.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="flex flex-col text-white gap-1">
+                                <span class="font-bold text-lg">Phone Number</span>
+                                <a href="tel:5617576587">(561)-757-6587</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect width="40" height="40" rx="4" fill="#49B2E7"/>
+                                <path d="M10.4082 15.6694L18.2982 20.9294C18.6269 21.1487 19.0131 21.2657 19.4082 21.2657C19.8033 21.2657 20.1896 21.1487 20.5182 20.9294L28.4082 15.6694M12.4082 26.6694H26.4082C26.9387 26.6694 27.4474 26.4587 27.8224 26.0836C28.1975 25.7086 28.4082 25.1999 28.4082 24.6694V14.6694C28.4082 14.139 28.1975 13.6303 27.8224 13.2552C27.4474 12.8801 26.9387 12.6694 26.4082 12.6694H12.4082C11.8778 12.6694 11.3691 12.8801 10.994 13.2552C10.6189 13.6303 10.4082 14.139 10.4082 14.6694V24.6694C10.4082 25.1999 10.6189 25.7086 10.994 26.0836C11.3691 26.4587 11.8778 26.6694 12.4082 26.6694Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="flex flex-col text-white gap-1">
+                                <span class="font-bold text-lg">E-mail</span>
+                                <a href="mail:roofmasters@gmail.com">roofmasters@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect width="40" height="40" rx="4" fill="#49B2E7"/>
+                                <path d="M25.0233 24.1582L20.7803 28.4012C20.5948 28.5869 20.3744 28.7343 20.1319 28.8348C19.8894 28.9353 19.6294 28.9871 19.3668 28.9871C19.1043 28.9871 18.8443 28.9353 18.6018 28.8348C18.3592 28.7343 18.1389 28.5869 17.9533 28.4012L13.7093 24.1582C12.5906 23.0393 11.8287 21.6139 11.52 20.062C11.2114 18.5102 11.3698 16.9017 11.9753 15.4399C12.5809 13.9781 13.6062 12.7287 14.9218 11.8497C16.2374 10.9706 17.7841 10.5015 19.3663 10.5015C20.9486 10.5015 22.4953 10.9706 23.8109 11.8497C25.1264 12.7287 26.1518 13.9781 26.7573 15.4399C27.3628 16.9017 27.5213 18.5102 27.2126 20.062C26.904 21.6139 26.1421 23.0393 25.0233 24.1582Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.3663 18.501C22.3663 19.2966 22.0503 20.0597 21.4877 20.6223C20.925 21.1849 20.162 21.501 19.3663 21.501C18.5707 21.501 17.8076 21.1849 17.245 20.6223C16.6824 20.0597 16.3663 19.2966 16.3663 18.501C16.3663 17.7053 16.6824 16.9423 17.245 16.3797C17.8076 15.817 18.5707 15.501 19.3663 15.501C20.162 15.501 20.925 15.817 21.4877 16.3797C22.0503 16.9423 22.3663 17.7053 22.3663 18.501Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="flex flex-col text-white gap-1">
+                                <span class="font-bold text-lg">Address</span>
+                                <a href="https://maps.app.goo.gl/UyQFVsJChHXkDN1V9">2420 NW 1st Ave Boca Raton, </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <form class="flex flex-col gap-5">
+                            <input class="p-4 rounded-md" type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+                            <input class="p-4 rounded-md" type="email" name="email" id="email" placeholder="E-mail" required>
+                            <input class="p-4 rounded-md" type="number" name="phonenumber" id="phonenumber" placeholder="Phone number" required>
+                            <input class="p-4 rounded-md" type="datetime-local" name="time" id="time" >
+                            <textarea class="p-4 rounded-md" name="text" rows="5" id="text" placeholder="Message"></textarea>
+                            <input class="p-4 rounded-md bg-[#2199D6] text-white" type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Section 5 -->
+    <section class="py-10">
+        <div class="container mx-auto px-8">
+            <div class="flex flex-col justify-center items-center gap-5 px-[10px]">
+                <span class="text-xl text-[#12679B]">
+                    Satisficed Ratings
+                </span>
+                <h2 class="text-4xl font-bold">
+                    People love us
+                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 justify-between items-center gap-20">
+                    <div class="flex flex-col justify-center items-center gap-4 border py-10 px-20">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <g clip-path="url(#clip0_172_796)">
+                            <path d="M23.9996 19.6362V28.9308H36.916C36.3488 31.9199 34.6468 34.4509 32.0941 36.1527L39.8831 42.1964C44.4213 38.0074 47.0395 31.8546 47.0395 24.5456C47.0395 22.8438 46.8868 21.2073 46.6031 19.6365L23.9996 19.6362Z" fill="#4285F4"/>
+                            <path d="M10.5494 28.5679L8.79263 29.9126L2.57434 34.7562C6.52342 42.5888 14.6174 47.9998 23.9991 47.9998C30.4789 47.9998 35.9116 45.8616 39.8826 42.1963L32.0936 36.1526C29.9554 37.5926 27.2281 38.4654 23.9991 38.4654C17.7591 38.4654 12.4575 34.2545 10.5592 28.5817L10.5494 28.5679Z" fill="#34A853"/>
+                            <path d="M2.57436 13.2437C0.938084 16.4726 0 20.1163 0 23.9999C0 27.8834 0.938084 31.5271 2.57436 34.7561C2.57436 34.7778 10.5599 28.5597 10.5599 28.5597C10.08 27.1197 9.79624 25.5926 9.79624 23.9996C9.79624 22.4067 10.08 20.8795 10.5599 19.4395L2.57436 13.2437Z" fill="#FBBC05"/>
+                            <path d="M23.9996 9.55636C27.5342 9.55636 30.676 10.7781 33.1851 13.1345L40.0577 6.2619C35.8904 2.37833 30.4797 0 23.9996 0C14.6179 0 6.52342 5.38908 2.57434 13.2437L10.5597 19.44C12.4578 13.7672 17.7596 9.55636 23.9996 9.55636Z" fill="#EA4335"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_172_796">
+                            <rect width="48" height="48" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        <span class="font-bold">Google Reviews</span>
+                        <img src="img/Group.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center items-center gap-4 border py-10 px-20">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <g clip-path="url(#clip0_172_805)">
+                            <path d="M48 24C48 10.7453 37.2547 0 24 0C10.7453 0 0 10.7453 0 24C0 35.255 7.74912 44.6995 18.2026 47.2934V31.3344H13.2538V24H18.2026V20.8397C18.2026 12.671 21.8995 8.8848 29.9194 8.8848C31.44 8.8848 34.0637 9.18336 35.137 9.48096V16.129C34.5706 16.0694 33.5866 16.0397 32.3645 16.0397C28.4294 16.0397 26.9088 17.5306 26.9088 21.4061V24H34.7482L33.4013 31.3344H26.9088V47.8243C38.7926 46.3891 48.001 36.2707 48.001 24H48Z" fill="#0866FF"/>
+                            <path d="M33.4003 31.3344L34.7472 24H26.9078V21.406C26.9078 17.5305 28.4285 16.0396 32.3635 16.0396C33.5856 16.0396 34.5696 16.0694 35.136 16.1289V9.48093C34.0627 9.18237 31.439 8.88477 29.9184 8.88477C21.8986 8.88477 18.2016 12.671 18.2016 20.8396V24H13.2528V31.3344H18.2016V47.2934C20.0582 47.7542 22.0003 48 23.999 48C24.983 48 25.9536 47.9395 26.9069 47.8243V31.3344H33.3994H33.4003Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_172_805">
+                            <rect width="48" height="48" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="font-bold">Facebook Reviews</span>
+                        <img src="img/Group.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center items-center gap-4 border py-10 px-20">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" fill="url(#pattern0_172_814)"/>
+                            <defs>
+                            <pattern id="pattern0_172_814" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_172_814" transform="scale(0.0166667)"/>
+                            </pattern>
+                            <image id="image0_172_814" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAIfUlEQVRoBeWav4tkRRDHBxMNXDD3DzAwcbLJRrNjQAw2ODARYQTHYFCQEZQVNVBYEQQvUEQ8DFRQ0AsEQQQVA8VAQVHhMDgw8ScIgop3++Tzvfcdysd7PV2z6+6CD5ru6a7urm/Vt6r7vd3RaMvnhvnTt97zwtuvnGRBhy3Vz027+cFz93/0zaXmpB90QJec9klprHpUYL/6/sdD2wxdkhBy4lj00Fo2TXPfS++oHMVaOQRJ6aMAjGdH43nz8GvvHwXe/97DVw4ODqXoTQ8814ymy2bn7qeaC599e/lQizXN6QYMlUeThcCOdvea0Wx1aE8nSZoTh9Lbehhv4tnr7nxCgPHwNWcfk7cnj7zYXPr5t62cnUOQlD4MYECZytff9WRDATS1DfHyB5+n4yUJISe+LeA//77c3HjvMw00NthYA1wUny6VvTMsyiFISm8L+Jff/1jHbQQa24CG7sT4LQ8932CkmicJISe+LWA8puw8W/V62MDXFJ8sqs/pHIKkNIBrrN4nEzO0AfbVpjcJDWZsepIQcuJcLWup1lWULKysPFutk1UfYPpE7dmq6pzOIaiQBuTt+68/+uYnX79FweqApq7xQATOLQtAZGVqU7gL/EQAQ18AckHnDN2/8PEVroOUc+9++hf9AMZzNV63HPVtj58XaDJzH2gxYXev6myu8NlmEXsSkDpOZivdirgZuZCEAA+AGm/jxXjOMtdrRdCK4emy4dyueTaj2SABWDymrDpZDJ6dOjfbIwSqGnifkkpY47k8G8MAlsiggeKmM2M1zwY45WG+YHCE1CQXPGFvoDSgAdO9NMQrJbGLbHxpYM4d+6/K24rvySJ1vy4jKow6A/u8BIyBQz0D7CYYgyYuu9SO56/nm8ZQOj7adzzXpSP2b2oXIJWHoDIx5rcZqIWSKCZKdq6FAtq+8cgz06WSGSDtZQygsTCXeTLkZKE4RYbHtCc0Mk8ZVWEUSuqC33oT+qGEHwO0hzEI8tDRgGlHL5MLFKMBMLKspTnjueazBx6O+3nfTXUBUnmIJEEiAogTB0bwo6zavrgrYY3njRMLrKAAjr54TNlzEShtAW4NwRxOBO+VqcuoCqOic3vXJc64wPOgMArhOfqhI56l3wahrcSzu6ejJwKmrXN3stBcexfAovbu3tpwGaCWLUAqD/0L8HS5PjNRCkA8Unw8X495U2rAYxAuJRGwZbrnrkJkthIr+uQ9b1NdRlUY1fHRehCQTiZxQxmlPVqIOXuYNnQmFFhnCABjiun2ywd5AgPFPbLtAqTyEMpLmfBqhjJ4N9JXMty4Jgt5mqyqo2a6VBiwTp+xDIQx0b+9iLh/27qMqjD63pff/QQwPqGiNF5ycqIPJXmcvJyEoKboGb5WDHnYoMgJQyyyTG1dgFQe4o3I3oKiFJRyRoWuJDL6acek4+zu5Faj7Caj1KyBTBnVhlG8rDgdz+Vde4/aRxXg+G0PYxRikXmAcHEo9NWwhGOob8x9GK/m2QCpPMz1kk1QRmdrAGdPuxaNieXpUvLEpmOX2B/tnFF4EA4q0+XVWA9vXIp9/+Yst+zOGRnVN7YS8DKiilFAXzk4+DVmVCnGNdKlBUoCw7MAjVdCvIPRGKPQhgkOBRstsoQjz/IYjPaxAMYmgOZuTfJiYxIWlw3HNspBS4BB4Qh2yBvMhQ0Aj0VGnC63vnxU+LBexMCJbQoAMQIADZS65nF2x8uxOCfUrtPdqx5NUvJi01xLJoe+KFdDt65yfb9j7PeNb+pLwsiJ932mBTjxDvWpYzsqCzu6BbbEJ86N7ZJxcwiS0n0f4vE2ycdvTOtMO1ko5h3fOtbat6ohGWX+AZmucWyoJISceB9grK+ENFvpNuZzVFfQcEPbVkbzCtfQHIKk9BBggZsubXTVUBJP+jXTWTrSMyPD/L4nCSEnPgTY3iMTE8ucoxxj0Ji45enKIJeRwTinCzCXEm5Tvi2N53r7cgwLcI8McVsjcypj2B7Ge9yu8LAB4U1ubNvKsJYNEz2d42hSeojSfTG8pnH7hUTvwJ04R4YY97u1ZWKcr2UGvrQkIeTEhwA7PsnQeJYi5dsXA+JYn4dmK31MGJLxnN51Bq6fOQRJ6T7AnMN6RYxvO20c008Cw0s6h0N8O9ajjM7zARmMRBxjDCdC1k1CyIn3AYZ+zszUscSYOwoZ1mOduG4OQVIawFj1ND1JCDnx/x1g3pa4AJBcKMQTx01s+zdJym1qt2M/bbK01/MYfW57XlyDfZlDLOdclpQGsN5rSSxk4Pbvw7r0t/ddFOECwlGFYrzvGhRt+lGemuxuGdbjN0BZg7aBs777vS9Jj0SWhJATB7A22d1bf9EkgaA0Ctn7/Ca5oDj9eIJsTUGG34whgwGRZ4y1aTPOPNZG3ushi4xOhdlK83MIktIRsG9NHBUoYcVsecDQxkuMUVAYYNR4mHl4kt+eTz+/OaJYG8NQ6PNaxw94ttK5ihJ4Ag+40Geq2stQ2LS2HL+RRYY2cwBm+lJ7ffoxFLKsdfyA28+3ukwQy+3XTMCjHAo5RqnxFmMAMyD6mQdQ2syjbeDMQR4DMYff2q/9EysME4uSLE2JR0pbAWonI2hJ/OEZFAUINd4hHg0GRR3HAPVvZOmH6ngSSrOWgVKzn/Y8CcDrzdtMjKIoDXDaAKYGlI1ADUAbxwah3562LPOYDztgjfc7fsCdfx80NQFi0AZOjWfp9xhyeJAx+gBIDUDAYQz6+G0mQOEuYJiTomhWmO/UKOOkQa12G8MAA4jOyt29q+323yjWyaYT/8wnRhlnvgtruI+299J+bdJElyyGtPzZZ9+4iNWtDInFBUpS+I3itKn57bYBdes47jWo3fYezIMF6MD/laUBZCfwQZ6Nzn/4xQ9Q6iQKe6MDumT0/wfH9kRp4/kXzAAAAABJRU5ErkJggg=="/>
+                            </defs>
+                        </svg>
+                        <span class="font-bold">BBB Reviews</span>
+                        <img src="img/Group.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Section 6  -->
+    <section class="bg-[#0E2D43] py-10 relative overflow-hidden">
+        <div class="container mx-auto px-8">
+            <img class="absolute top-[-134px] left-[-123px]" src="img/Subtract.png" alt="">
+            <div class="flex flex-col justify-between items-center gap-5 px-[10px]">
+                <span class="text-white">
+                    Reviews
+                </span>
+                <h2 class="text-white font-bold text-4xl">
+                    What our clients say
+                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-10 justify-center items-center">
+                    <div class="bg-white flex flex-col justify-center items-center gap-5 rounded-md p-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48" fill="none">
+                            <g clip-path="url(#clip0_172_796)">
+                            <path d="M23.9996 19.6362V28.9308H36.916C36.3488 31.9199 34.6468 34.4509 32.0941 36.1527L39.8831 42.1964C44.4213 38.0074 47.0395 31.8546 47.0395 24.5456C47.0395 22.8438 46.8868 21.2073 46.6031 19.6365L23.9996 19.6362Z" fill="#4285F4"/>
+                            <path d="M10.5494 28.5679L8.79263 29.9126L2.57434 34.7562C6.52342 42.5888 14.6174 47.9998 23.9991 47.9998C30.4789 47.9998 35.9116 45.8616 39.8826 42.1963L32.0936 36.1526C29.9554 37.5926 27.2281 38.4654 23.9991 38.4654C17.7591 38.4654 12.4575 34.2545 10.5592 28.5817L10.5494 28.5679Z" fill="#34A853"/>
+                            <path d="M2.57436 13.2437C0.938084 16.4726 0 20.1163 0 23.9999C0 27.8834 0.938084 31.5271 2.57436 34.7561C2.57436 34.7778 10.5599 28.5597 10.5599 28.5597C10.08 27.1197 9.79624 25.5926 9.79624 23.9996C9.79624 22.4067 10.08 20.8795 10.5599 19.4395L2.57436 13.2437Z" fill="#FBBC05"/>
+                            <path d="M23.9996 9.55636C27.5342 9.55636 30.676 10.7781 33.1851 13.1345L40.0577 6.2619C35.8904 2.37833 30.4797 0 23.9996 0C14.6179 0 6.52342 5.38908 2.57434 13.2437L10.5597 19.44C12.4578 13.7672 17.7596 9.55636 23.9996 9.55636Z" fill="#EA4335"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_172_796">
+                            <rect width="48" height="48" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <img src="img/Group.png" alt="">
+                        <p class="text-center">
+                            This company made it so easy, follow up and response time was wonderful. Ideal experience - highly recommend -
+                        </p>
+                        <img class="rounded-full" src="img/Shape.png" alt="">
+                        <span>
+                            Jane Jack
+                        </span>
+                        <span class="text-center text-[#7F8188]">
+                            4517 Washington Ave. Manchester, Kentucky 39495
+                        </span>
+                    </div>
+                    <div class="bg-white flex flex-col justify-center items-center gap-5 rounded-md p-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48" fill="none">
+                            <g clip-path="url(#clip0_172_796)">
+                            <path d="M23.9996 19.6362V28.9308H36.916C36.3488 31.9199 34.6468 34.4509 32.0941 36.1527L39.8831 42.1964C44.4213 38.0074 47.0395 31.8546 47.0395 24.5456C47.0395 22.8438 46.8868 21.2073 46.6031 19.6365L23.9996 19.6362Z" fill="#4285F4"/>
+                            <path d="M10.5494 28.5679L8.79263 29.9126L2.57434 34.7562C6.52342 42.5888 14.6174 47.9998 23.9991 47.9998C30.4789 47.9998 35.9116 45.8616 39.8826 42.1963L32.0936 36.1526C29.9554 37.5926 27.2281 38.4654 23.9991 38.4654C17.7591 38.4654 12.4575 34.2545 10.5592 28.5817L10.5494 28.5679Z" fill="#34A853"/>
+                            <path d="M2.57436 13.2437C0.938084 16.4726 0 20.1163 0 23.9999C0 27.8834 0.938084 31.5271 2.57436 34.7561C2.57436 34.7778 10.5599 28.5597 10.5599 28.5597C10.08 27.1197 9.79624 25.5926 9.79624 23.9996C9.79624 22.4067 10.08 20.8795 10.5599 19.4395L2.57436 13.2437Z" fill="#FBBC05"/>
+                            <path d="M23.9996 9.55636C27.5342 9.55636 30.676 10.7781 33.1851 13.1345L40.0577 6.2619C35.8904 2.37833 30.4797 0 23.9996 0C14.6179 0 6.52342 5.38908 2.57434 13.2437L10.5597 19.44C12.4578 13.7672 17.7596 9.55636 23.9996 9.55636Z" fill="#EA4335"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_172_796">
+                            <rect width="48" height="48" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <img src="img/Group.png" alt="">
+                        <p class="text-center">
+                            This company made it so easy, follow up and response time was wonderful. Ideal experience - highly recommend -
+                        </p>
+                        <img class="rounded-full" src="img/Shape.png" alt="">
+                        <span>
+                            Jane Jack
+                        </span>
+                        <span class="text-center text-[#7F8188]">
+                            4517 Washington Ave. Manchester, Kentucky 39495
+                        </span>
+                    </div>
+                    <div class="bg-white flex flex-col justify-center items-center gap-5 rounded-md p-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48" fill="none">
+                            <g clip-path="url(#clip0_172_796)">
+                            <path d="M23.9996 19.6362V28.9308H36.916C36.3488 31.9199 34.6468 34.4509 32.0941 36.1527L39.8831 42.1964C44.4213 38.0074 47.0395 31.8546 47.0395 24.5456C47.0395 22.8438 46.8868 21.2073 46.6031 19.6365L23.9996 19.6362Z" fill="#4285F4"/>
+                            <path d="M10.5494 28.5679L8.79263 29.9126L2.57434 34.7562C6.52342 42.5888 14.6174 47.9998 23.9991 47.9998C30.4789 47.9998 35.9116 45.8616 39.8826 42.1963L32.0936 36.1526C29.9554 37.5926 27.2281 38.4654 23.9991 38.4654C17.7591 38.4654 12.4575 34.2545 10.5592 28.5817L10.5494 28.5679Z" fill="#34A853"/>
+                            <path d="M2.57436 13.2437C0.938084 16.4726 0 20.1163 0 23.9999C0 27.8834 0.938084 31.5271 2.57436 34.7561C2.57436 34.7778 10.5599 28.5597 10.5599 28.5597C10.08 27.1197 9.79624 25.5926 9.79624 23.9996C9.79624 22.4067 10.08 20.8795 10.5599 19.4395L2.57436 13.2437Z" fill="#FBBC05"/>
+                            <path d="M23.9996 9.55636C27.5342 9.55636 30.676 10.7781 33.1851 13.1345L40.0577 6.2619C35.8904 2.37833 30.4797 0 23.9996 0C14.6179 0 6.52342 5.38908 2.57434 13.2437L10.5597 19.44C12.4578 13.7672 17.7596 9.55636 23.9996 9.55636Z" fill="#EA4335"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_172_796">
+                            <rect width="48" height="48" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <img src="img/Group.png" alt="">
+                        <p class="text-center">
+                            This company made it so easy, follow up and response time was wonderful. Ideal experience - highly recommend -
+                        </p>
+                        <img class="rounded-full" src="img/Shape.png" alt="">
+                        <span>
+                            Jane Jack
+                        </span>
+                        <span class="text-center text-[#7F8188]">
+                            4517 Washington Ave. Manchester, Kentucky 39495
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- <img class="absolute bottom-[-134px] right-[-123px]" src="img/Subtract.png" alt=""> -->
+        </div>
+    </section>
+<!-- section 7 -->
+    <section >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.591149396523!2d-80.08685080000001!3d26.372082799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8e1ef8657ace5%3A0x868a7e9b9bf4b84e!2s2420%20NW%201st%20Ave%2C%20Boca%20Raton%2C%20FL%2033431%2C%20USA!5e0!3m2!1sen!2seg!4v1726667079768!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="container mx-auto px-8">
+            <div class="flex flex-col justify-center items-center relative gap-10 text-white bg-[#0E2D43] py-10 overflow-hidden px-[10px]">
+                <img class="absolute top-[-134px] left-[-123px]" src="img/Subtract.png" alt="">
+                <h2 class="font-bold text-white text-4xl">
+                    Areas we serve
+                </h2>
+                <div class="grid grid-cols-2 lg:grid-cols-5 xl:grid-cols-5 justify-between items-center gap-5 ">
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Atlantis
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Boca Raton
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Boynton Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Boynton Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Coconut Creek
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Cooper City
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Dania Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Davie
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Deerfield Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Deerfield Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Delray Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Delray Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Fort Lauderdale
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Gulfstream
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Hollywood
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Hillsboro Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Highland Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Gulfstream
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Hallandale Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Fort Lauderdale
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Atlantis
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Boca Raton
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Boynton Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Boynton Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Coconut Creek
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Cooper City
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Dania Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Davie
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Deerfield Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Deerfield Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Delray Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Delray Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Fort Lauderdale
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Gulfstream
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Hollywood
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Hillsboro Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Highland Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Gulfstream
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Hallandale Beach
+                        </span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>
+                            Fort Lauderdale
+                        </span>
+                    </div>
+                </div>
+                <img class="overflow-hidden absolute right-[-169px] bottom-[-143px]" src="img/Subtract.png" alt="">
+            </div>
+        </div>
+    </section>
+<!-- Section 8 -->
+    <section class="bg-[#F1F9FE] py-10">
+        <div class="container mx-auto px-8">
+            <div class="grid grid-cols-1 lg:grid-col-2 xl:grid-cols-2 justify-between gap-10 px-[10px]">
+                <div class="flex flex-col items-start justify-start gap-10">
+                    <span class="text-[#12679B]">
+                        Need Help?
+                    </span>
+                    <h2 class="text-4xl font-bold">
+                        Frequently Asked Questions ?
+                    </h2>
+                    <div class="">
+                        <button class="text-[#3C3F49] font-bold text-2xl bg-white rounded-md py-5 pl-5 pr-28">
+                            What is our Vision
+                        </button>
+                        <div class=" z-[1] pl-5">
+                            <p class="text-lg block">Our vision is to be the highest quality specialty contractor. Through superior performance, we build value for our customers. We strive to exceed customer expectations.</p>
+                            <p class="text-lg block">At Build Masters Lc, we know that our customers expect the highest level of construction services. We deliver more than just quality installation. Through trust, confidence, integrity and the ability to anticipate needs, we build relationships with our clients for long-term success.</p>
+                            <p class="text-lg block">Our people-our most important asset-are committed to exceeding customer expectations.We are proud to provide excellent service with competitive pricing. Our reputation for working closely with subcontractors, Architects and owners is well recognized throughout the industry.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="text-[#3C3F49] font-bold text-2xl bg-white rounded-md py-5 pl-5 pr-28">
+                            What is our Mission
+                        </button>
+                    </div>
+                    <div>
+                        <button class="text-[#3C3F49] font-bold text-2xl bg-white rounded-md py-5 pl-5 pr-32">
+                            What is our Story
+                        </button>
+                    </div>
+                </div>
+                <img class="rounded-md w-[100%]" src="img/Rectangle 8.png" alt="">
+            </div>
+        </div>
+    </section>
+<!-- Section 9 -->
+    <section class="py-10">
+        <div class="container mx-auto px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 justify-between items-center gap-10 px-[10px]">
+                <div class="flex flex-col gap-5">
+                    <span class="text-[#12679B] text-xl">Trusted Services</span>
+                    <h2 class="text-4xl font-bold">Our certificates</h2>
+                </div>
+                <div class="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 items-center gap-5">
+                    <img class="border p-6" src="img/1.svg" alt="">
+                    <img class="border p-6" src="img/2.svg" alt="">
+                    <img class="border p-6" src="img/3.svg" alt="">
+                    <img class="border p-6" src="img/4.svg" alt="">
+                    <img class="border p-6" src="img/5.svg" alt="">
+                    <img class="border p-6" src="img/6.svg" alt="">
+                    <img class="border p-6"  src="img/7.svg" alt="">
+                    <img class="border p-6" src="img/8.svg" alt="">
+                    <img class="border p-6" src="img/9.svg" alt="">
+                    <img class="border p-6" src="img/10.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+<!--footer  -->
+    <footer class="bg-[#0E2D43] py-10">
+        <div class="container mx-auto px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-4 gap-20 items-start px-[10px]">
+                <div class="flex flex-col gap-8">
+                    <img class="" src="img/Logo.png" alt="">
+                    <p class="text-white">
+                        Roof Masters is a subsidiary of Build Masters, LC Build Masters, LC is a full-service General Contractor, Roofing, Plumbing and Restoration Contractors.
+                    </p>
+                    <div class="flex items-center gap-5">
+                        <a href=""><img src="img/facebookIcon.svg" alt=""></a>
+                        <a href=""><img src="img/xIcon.svg" alt=""></a>
+                        <a href=""><img src="img/ytIcon.svg" alt=""></a>
+                        <a href=""><img src="img/igIcon.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-8 py-2">
+                    <h3 class="text-3xl text-white font-bold">Quick Links</h3>
+                    <ul class="text-white flex flex-col gap-2">
+                        <a href="">
+                            <li>
+                                Home
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                Services
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                About us
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                Contact us
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                Areas we serve
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-8 py-2">
+                    <h3 class="text-3xl text-white font-bold">Services</h3>
+                    <ul class="text-white flex flex-col gap-2">
+                        <a href="">
+                            <li>
+                                Roof Repairs & Restoration
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                Roof Replacement & Installation
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                Re-Roofing
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                Commercial Roofing
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-8 py-2">
+                    <h3 class="text-3xl text-white font-bold">Contact Us</h3>
+                    <ul class="text-white flex flex-col gap-4">
+                        <a class="flex gap-4" href="tel:5617576587">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M2.49988 4.16667C2.49988 3.72464 2.67547 3.30072 2.98803 2.98816C3.30059 2.67559 3.72452 2.5 4.16654 2.5H6.89988C7.07471 2.50013 7.24506 2.55525 7.38684 2.65754C7.52862 2.75984 7.63463 2.90413 7.68988 3.07L8.93821 6.81417C9.00146 7.00445 8.99398 7.21116 8.91714 7.39637C8.8403 7.58158 8.69925 7.73288 8.51988 7.8225L6.63904 8.76417C7.56098 10.8046 9.19526 12.4389 11.2357 13.3608L12.1774 11.48C12.267 11.3006 12.4183 11.1596 12.6035 11.0827C12.7887 11.0059 12.9954 10.9984 13.1857 11.0617L16.9299 12.31C17.0959 12.3653 17.2403 12.4714 17.3426 12.6134C17.4449 12.7553 17.4999 12.9259 17.4999 13.1008V15.8333C17.4999 16.2754 17.3243 16.6993 17.0117 17.0118C16.6992 17.3244 16.2752 17.5 15.8332 17.5H14.9999C8.09654 17.5 2.49988 11.9033 2.49988 5V4.16667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <li>
+                                (561)-757-6587
+                            </li>
+                        </a>
+                        <a class="flex gap-4" href="mail:roofmasters@gmail.com">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M2.49988 6.66699L9.07488 11.0503C9.34876 11.2331 9.67063 11.3306 9.99988 11.3306C10.3291 11.3306 10.651 11.2331 10.9249 11.0503L17.4999 6.66699M4.16654 15.8337H15.8332C16.2752 15.8337 16.6992 15.6581 17.0117 15.3455C17.3243 15.0329 17.4999 14.609 17.4999 14.167V5.83366C17.4999 5.39163 17.3243 4.96771 17.0117 4.65515C16.6992 4.34259 16.2752 4.16699 15.8332 4.16699H4.16654C3.72452 4.16699 3.30059 4.34259 2.98803 4.65515C2.67547 4.96771 2.49988 5.39163 2.49988 5.83366V14.167C2.49988 14.609 2.67547 15.0329 2.98803 15.3455C3.30059 15.6581 3.72452 15.8337 4.16654 15.8337Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <li>
+                                roofmasters@gmail.com
+                            </li>
+                        </a>
+                        <a class="flex gap-4" href="https://maps.app.goo.gl/UyQFVsJChHXkDN1V9">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                    <path d="M17.657 17.1572L13.414 21.4002C13.2284 21.5859 13.0081 21.7333 12.7656 21.8338C12.523 21.9344 12.2631 21.9861 12.0005 21.9861C11.738 21.9861 11.478 21.9344 11.2354 21.8338C10.9929 21.7333 10.7726 21.5859 10.587 21.4002L6.343 17.1572C5.22422 16.0384 4.46234 14.6129 4.15369 13.0611C3.84504 11.5092 4.00349 9.90071 4.60901 8.43893C5.21452 6.97714 6.2399 5.72774 7.55548 4.8487C8.87107 3.96967 10.4178 3.50049 12 3.50049C13.5822 3.50049 15.1289 3.96967 16.4445 4.8487C17.7601 5.72774 18.7855 6.97714 19.391 8.43893C19.9965 9.90071 20.155 11.5092 19.8463 13.0611C19.5377 14.6129 18.7758 16.0384 17.657 17.1572Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15 11.5C15 12.2956 14.6839 13.0587 14.1213 13.6213C13.5587 14.1839 12.7956 14.5 12 14.5C11.2044 14.5 10.4413 14.1839 9.87868 13.6213C9.31607 13.0587 9 12.2956 9 11.5C9 10.7044 9.31607 9.94129 9.87868 9.37868C10.4413 8.81607 11.2044 8.5 12 8.5C12.7956 8.5 13.5587 8.81607 14.1213 9.37868C14.6839 9.94129 15 10.7044 15 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <li>
+                                2420 NW 1st Ave Boca Raton, FL 33431
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="home.js"></script> 
+</body>
+</html>
