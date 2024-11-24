@@ -920,24 +920,52 @@
                         Frequently Asked Questions ?
                     </h2>
                     <div class="">
-                        <button class="text-[#3C3F49] font-bold text-2xl bg-white rounded-md py-5 pl-5 pr-28">
+                        <button class="collapsible   float-right inline-flex justify-between bg-white w-full text-2xl font-bold text-[#3C3F49] p-6 rounded-2xl">
                             What is our Vision
+                            <div ><!--  class="rotate-[180deg] " -->
+                                <svg class="transition duration-300 shrink-0 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                    <path d="M19 9.5L12 16.5L5 9.5" stroke="#147AB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                         </button>
-                        <div class=" z-[1] pl-5">
-                            <p class="text-lg block">Our vision is to be the highest quality specialty contractor. Through superior performance, we build value for our customers. We strive to exceed customer expectations.</p>
-                            <p class="text-lg block">At Build Masters Lc, we know that our customers expect the highest level of construction services. We deliver more than just quality installation. Through trust, confidence, integrity and the ability to anticipate needs, we build relationships with our clients for long-term success.</p>
-                            <p class="text-lg block">Our people-our most important asset-are committed to exceeding customer expectations.We are proud to provide excellent service with competitive pricing. Our reputation for working closely with subcontractors, Architects and owners is well recognized throughout the industry.</p>
+                        <div class="  w-full pt-6 overflow-hidden duration-200 ease-out content max-h-0 transition-max-height">
+                                <div class="">Our vision is to be the highest quality specialty contractor. Through superior performance, we build value for our customers. We strive to exceed customer expectations.
+                                At Build Masters Lc, we know that our customers expect the highest level of construction services. We deliver more than just quality installation. Through trust, confidence, integrity and the ability to anticipate needs, we build relationships with our clients for long-term success.
+                                Our people-our most important asset-are committed to exceeding customer expectations.We are proud to provide excellent service with competitive pricing. Our reputation for working closely with subcontractors, Architects and owners is well recognized throughout the industry.
+                                </div>
                         </div>
                     </div>
                     <div>
-                        <button class="text-[#3C3F49] font-bold text-2xl bg-white rounded-md py-5 pl-5 pr-28">
+                        <button class="collapsible float-right inline-flex justify-between bg-white w-full text-2xl font-bold text-[#3C3F49] p-6 rounded-2xl">
                             What is our Mission
+                            <div><!--  class="rotate-[180deg] " -->
+                                <svg class="transition duration-300 shrink-0 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                    <path d="M19 9.5L12 16.5L5 9.5" stroke="#147AB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                         </button>
+                        <div class="  w-full pt-6 overflow-hidden duration-200 ease-out content max-h-0 transition-max-height">
+                            <div class="">Our vision is to be the highest quality specialty contractor. Through superior performance, we build value for our customers. We strive to exceed customer expectations.
+                            At Build Masters Lc, we know that our customers expect the highest level of construction services. We deliver more than just quality installation. Through trust, confidence, integrity and the ability to anticipate needs, we build relationships with our clients for long-term success.
+                            Our people-our most important asset-are committed to exceeding customer expectations.We are proud to provide excellent service with competitive pricing. Our reputation for working closely with subcontractors, Architects and owners is well recognized throughout the industry.
+                            </div>
+                        </div>
                     </div>
                     <div>
-                        <button class="text-[#3C3F49] font-bold text-2xl bg-white rounded-md py-5 pl-5 pr-32">
+                        <button class="collapsible  float-right inline-flex justify-between bg-white w-full text-2xl font-bold text-[#3C3F49] p-6 rounded-2xl">
                             What is our Story
+                            <div><!--  class="rotate-[180deg] " -->
+                                <svg class="transition duration-300 shrink-0 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                    <path d="M19 9.5L12 16.5L5 9.5" stroke="#147AB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                         </button>
+                        <div class="  w-full pt-6 overflow-hidden duration-200 ease-out content max-h-0 transition-max-height">
+                            <div class="text-[#0d0f14] text-lg container mx-auto px-4">Our vision is to be the highest quality specialty contractor. Through superior performance, we build value for our customers. We strive to exceed customer expectations.
+                            At Build Masters Lc, we know that our customers expect the highest level of construction services. We deliver more than just quality installation. Through trust, confidence, integrity and the ability to anticipate needs, we build relationships with our clients for long-term success.
+                            Our people-our most important asset-are committed to exceeding customer expectations.We are proud to provide excellent service with competitive pricing. Our reputation for working closely with subcontractors, Architects and owners is well recognized throughout the industry.
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <img class="rounded-md w-[100%]" src="img/Rectangle 8.png" alt="">
@@ -1080,5 +1108,33 @@
         </div>
     </footer>
     <script src="home.js"></script> 
+    <!-- collapsible js -->
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            // Close all other collapsible content
+            var allContent = document.querySelectorAll('.content');
+            allContent.forEach(function(content) {
+                if (content !== this.nextElementSibling) {
+                    content.style.maxHeight = null;
+                }
+            }.bind(this));
+
+            // Toggle active class
+            this.classList.toggle("active");
+
+            // Toggle max-height for the current content
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
 </body>
 </html>
